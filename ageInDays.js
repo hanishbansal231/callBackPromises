@@ -5,7 +5,8 @@ function ageInDays(person, logResult) {
     logResult(newPerson);
 };
 function logResult(result){
-    console.log(`The Person's full name is ${result[0]}, and their age in  days is ${result[1]}`);
+    let[name,age] = result;
+    console.log(`The Person's full name is ${name}, and their age in  days is ${age}.`);
 }
 
 let person = {
